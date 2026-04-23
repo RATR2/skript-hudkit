@@ -1,5 +1,5 @@
-name: SkriptHudKit
-version: 1.0.0
+name: Skript-HudKit
+version: ${version}
 main: net.hudkit.skript.SkriptHudKit
 api-version: '1.21.11'
 description: Skript addon for HudKit

@@ -10,7 +10,7 @@ java {
 }
 
 group = "net.hudkit"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -20,10 +20,7 @@ repositories {
 }
 
 dependencies {
-    // Paper API
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
-
-    // Skript
     compileOnly("com.github.SkriptLang:Skript:2.15.0")
 
     // HudKit API — built from source:
@@ -39,7 +36,7 @@ tasks.jar {
 
 tasks.shadowJar {
     archiveBaseName.set("skript-hudkit")
-    archiveVersion.set("")
+    archiveVersion.set(project.version.toString())
     archiveClassifier.set("")
 }
 
