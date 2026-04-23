@@ -63,19 +63,8 @@ public final class SkriptHudKit extends JavaPlugin {
     public void onEnable() {
         instance = this;
 
-        if (!getServer().getPluginManager().isPluginEnabled("Skript")) {
-            getLogger().severe("Skript not found — disabling SkriptHudKit.");
-            setEnabled(false);
-            return;
-        }
-        if (!getServer().getPluginManager().isPluginEnabled("Hudkit")) {
-            getLogger().severe("HudKit not found — disabling SkriptHudKit.");
-            setEnabled(false);
-            return;
-        }
-
         addonInstance = ch.njol.skript.Skript.instance().registerAddon(
-                SkriptHudKit.class, "SkriptHudKit");
+            SkriptHudKit.class, "SkriptHudKit");
 
         SyntaxRegistry registry = addonInstance.syntaxRegistry();
 
