@@ -1,0 +1,42 @@
+# Gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Kotlin
+.kotlin/
+
+# Build outputs
+build/
+*/build/
+buildSrc/build/
+
+# Generated assets
+generated-pack/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PocketBase data
+studio/pb_data/
+
+# SvelteKit
+studio/ui/.svelte-kit/
+studio/ui/.output/
+studio/ui/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+/hudkit
+/libs

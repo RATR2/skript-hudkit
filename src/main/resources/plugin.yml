@@ -1,0 +1,9 @@
+name: SkriptHudKit
+version: 1.0.0
+main: net.hudkit.skript.SkriptHudKit
+api-version: '1.21.11'
+description: Skript addon for HudKit
+
+depend:
+  - Skript
+  - Hudkit
